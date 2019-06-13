@@ -2,18 +2,18 @@
 
 > Fill this quoted section with a summary of your project. 3-5 sentences describing the problem and how your application solves it. (Even a game is solving a problem to a degree) - What makes your app stand out from other apps like it (Do some competitor research)
 
-Design an e-commerce site that provides web real estate for a set fee to sell products.
+Design an online book club where users can chat about a book, leave a book review, and/or comment on a review. Also, have links to popular books and where to buy them. Have discussions based on featured books.
 
 
 ## Developers
 
-- [Arthor Polly](Github Link)
+- Arthur Polly  - https://github.com/artpolly1
   - Role
   - Any other summary details about the developer you wish to provide
-- [Gerardo Cambronero](Github Link)
+- Gerardo Cambronero - https://github.com/gcamb007
   - Role
   - Any other summary details about the developer you wish to provide
-- [Monica Martinez](Github Link)
+- Monica Martinez - https://github.com/mgmarti
   - Role
   - Any other summary details about the developer you wish to provide
 
