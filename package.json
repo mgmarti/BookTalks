@@ -23,6 +23,7 @@
     "ejs": "^2.6.1",
     "express": "^4.17.1",
     "request": "^2.88.0",
+    "sequelize": "^5.8.10",
     "xml2js": "^0.4.19",
     "xmlhttprequest": "^1.8.0"
   }

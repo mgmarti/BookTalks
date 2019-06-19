@@ -36,13 +36,19 @@ module.exports = function (app) {
 
     //Results after search
     app.get('/featured', function (req, res) {
+        res.send('Featured Page');
+
+
+    });
+
+    app.get('/results', function (req, res) {
         // console.log(req.query.search);
         // const query = req.query.search;
         axios.get(`https://www.goodreads.com/book/title.json?key=${goodreads.id}&title=the+hobbit`)
             .then(function (reviews) {
                 // console.log(reviews)
 
-                res.render('results');
+                res.render('results', {reviewsData: reviews.data.reviews_widget});
 
                 //iframe widget
                 // res.send(reviews.data.reviews_widget);
