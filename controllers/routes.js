@@ -43,23 +43,26 @@ module.exports = function (app) {
 
     app.get('/results', function (req, res) {
         // console.log(req.query.search);
-        // const query = req.query.search;
-        axios.get(`https://www.goodreads.com/book/title.json?key=${goodreads.id}&title=the+hobbit`)
+        let search = req.query.search;
+
+        axios.get(`https://www.goodreads.com/book/title.json?key=${goodreads.id}&title=${search}`)
             .then(function (reviews) {
                 // console.log(reviews)
-
-                res.render('results', {reviewsData: reviews.data.reviews_widget});
+                res.render('results', {
+                    reviewsData: reviews.data.reviews_widget
+                });
 
                 //iframe widget
                 // res.send(reviews.data.reviews_widget);
-
             })
             .catch(function (error) {
                 console.log(error);
             });
-
-
     });
+
+    // app.get('/results', function(req, res){
+      
+    // });
 
 
 
