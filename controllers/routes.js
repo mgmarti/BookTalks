@@ -41,29 +41,50 @@ module.exports = function (app) {
 
     });
 
+    // app.get('/results', function (req, res) {
+    //     // console.log(req.query.search);
+    //     let search = req.query.search;
+
+    //     axios.get(`https://www.goodreads.com/book/title.json?key=${goodreads.id}&title=${search}`)
+    //         .then(function (reviews) {
+    //             // console.log(reviews)
+    //             res.render('results', {
+    //                 reviewsData: reviews.data.reviews_widget
+    //             });
+
+    //             //iframe widget
+    //             // res.send(reviews.data.reviews_widget);
+    //         })
+    //         .catch(function (error) {
+    //             console.log(error);
+    //         });
+    // });
+
+
     app.get('/results', function (req, res) {
         // console.log(req.query.search);
         let search = req.query.search;
 
-        axios.get(`https://www.goodreads.com/book/title.json?key=${goodreads.id}&title=${search}`)
-            .then(function (reviews) {
-                // console.log(reviews)
+        axios.all([axios.get('https://www.goodreads.com/book/title.json?key=' + goodreads.id + '&title=' + search),
+                axios.get('https://www.googleapis.com/books/v1/volumes?q=' + search)
+            ])
+
+            .then(axios.spread((reviews, title) => {
+                // do something with both responses
+                console.log(title.data.items[2].volumeInfo)
+
                 res.render('results', {
-                    reviewsData: reviews.data.reviews_widget
+                    reviewsData: reviews.data.reviews_widget,
+                    titleData: title.data.items[2].volumeInfo.title,
+                    coverData: title.data.items[2].volumeInfo.imageLinks.thumbnail,
+                    summaryData: title.data.items[2].volumeInfo.description
                 });
 
-                //iframe widget
-                // res.send(reviews.data.reviews_widget);
-            })
+            }))
             .catch(function (error) {
                 console.log(error);
             });
     });
-
-    // app.get('/results', function(req, res){
-      
-    // });
-
 
 
 
