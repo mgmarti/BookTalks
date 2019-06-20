@@ -14,11 +14,14 @@
 <body>
 
     <!------------ HEADER -------------->
-    <div class="container">
-        <a class="navbar-brand" href="./results.html">
-            <img class="logo" src="./images/logo.png" alt="BookTakls" height="50`">
-        </a>
+    <div class="banner">
+        <div class="container">
+            <a class="navbar-brand" href="./results.html">
+                <img class="logo" src="./images/logo.png" alt="BookTakls" height="50`">
+            </a>
+        </div>
     </div>
+
 
     <!------------ NAVAR -------------->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark pl-5 pr-5">
@@ -30,13 +33,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">HOME<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./results.html">HOME<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">LOGIN/REGISTER</a>
+                    <a class="nav-link" href="./chat.html">CHAT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PROFILE</a>
+                    <a class="nav-link" href="./login.html">LOGIN/REGISTER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./profile.html">PROFILE</a>
                 </li>
             </ul>
             <form class="form-inline">
@@ -50,14 +56,13 @@
 
     <!------------ RESULTS -------------->
     <div class="container">
-        <h1>
-            Book Search Results
-        </h1>
+        <img class="search" src="./images/searchResults.png" alt="results">
         <hr>
         <div id="book-results" class="row mt-5 mb-5">
             <div class="col-4">
                 <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4%2BOTOL.jpg" width="250" alt="">
             </div>
+            
             <!------------ WIDGET -------------->
             <div class="col-8">
                 <div id="goodreads-widget">

@@ -8,16 +8,18 @@
   <title>BookTalks Chat</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style-chat.css">
 </head>
 
 <body>
 
   <!------------ HEADER -------------->
-  <div class="container">
-    <a class="navbar-brand" href="./results.html">
-      <img class="logo" src="./images/logo.png" alt="BookTakls" height="50`">
-    </a>
+  <div class="banner">
+    <div class="container">
+      <a class="navbar-brand" href="./results.html">
+        <img class="logo" src="./images/logo.png" alt="BookTakls" height="50`">
+      </a>
+    </div>
   </div>
 
   <!------------ NAVAR -------------->
@@ -30,13 +32,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="./index.html">HOME<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="./results.html">HOME<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">LOGIN/REGISTER</a>
+          <a class="nav-link" href="./chat.html">CHAT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">PROFILE</a>
+          <a class="nav-link" href="./login.html">LOGIN/REGISTER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./profile.html">PROFILE</a>
         </li>
       </ul>
       <form class="form-inline">
@@ -48,14 +53,19 @@
     </div>
   </nav>
 
- 
-  <div id="history" class="chatHistory">
-    <img src="./images/logo.png" id="titleimg">
+  <!------------ CHAT -------------->
+  <div class="chat">
+    <h1>
+      <img class="logo" src="./images/chat.png" alt="BookTakls" height="40`">
+    </h1>
+    <div>
+      <div id="history" class="chatHistory"></div>
+      <form id="chat">
+        <input type="text" id="msg_text" name="msg_text" />
+        <input type="submit" value="Send" id="btn" />
+      </form>
+    </div>
   </div>
-  <form id="chat">
-    <input type="text" id="msg_text" name="msg_text" />
-    <input type="submit" value="Send" id="btn" />
-  </form>
 
   <!------------ SCRIPTS -------------->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
