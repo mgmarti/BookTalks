@@ -8,8 +8,7 @@
     <title>BookTalks</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/widget.css">
-    <link rel="stylesheet" href="/style.css">
+
 </head>
 
 <body>
@@ -36,9 +35,10 @@
                     <a class="nav-link" href="#"></a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <form action="/results" method="GET" class="form-inline my-2 my-lg-0">
+                <input id="searchInput" name="search" class="form-control mr-sm-2" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button id="submit" type="submit" class="btn btn-outline-success my-2 my-sm-0">Search</button>
             </form>
         </div>
     </nav>
@@ -46,53 +46,32 @@
 
 
     <h1> Book Results </h1>
-    
+
     <hr>
-
-
-        <div class="results">
-            <hr>
-            <h2>Book Results:</h2>
-            <hr>
-        </div>
-
-        <div id="book-results" class="row">
-            <div class="col-3">
-                <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4%2BOTOL.jpg" width="250" alt="">
-            </div>
-
-            <!-- widget -->
-            <div class="col-9">
-                <div id="goodreads-widget">
-                    <div id="gr_header">
-                        <!-- <h1><a rel="nofollow" href="https://www.goodreads.com/book/show/1175481.The_Alchemist">Reviews
-                                for The
-                                Alchemist</a></h1> -->
-                    </div>
-                    <iframe id="the_iframe"
-                        src="https://www.goodreads.com/api/reviews_widget_iframe?did=52655&format=html&header_text=Goodreads+reviews+for+The+Alchemist&isbn=8172234988&links=660&min_rating=&num_reviews=&review_back=ffffff&stars=000000&stylesheet=&text=444"
-                        width="825" height="350" frameborder="0"></iframe>
-                    <div id="gr_footer">
-                        <a class="gr_branding" target="_blank" rel="nofollow noopener noreferrer"
-                            href="https://www.goodreads.com/book/show/1175481.The_Alchemist?utm_medium=api&utm_source=reviews_widget">Reviews
-                            from Goodreads.com</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div id="book-results" class="row">
-            <div class="col-3">
-                <img src="https://images-na.ssl-images-amazon.com/images/I/91RQ5d-eIqL.jpg" width="250" alt="">
-            </div>
-
-            <!-- widget -->
-            <div class="col-9">
-                
-                <%- reviewsData %>
-            </div>
+    <div class="row">
+        <div id="bookTitle" class="col">
+            <p>
+                <%= titleData %>
+            </p>
         </div>
     </div>
+    <div id="book-results" class="row">
+        <!-- Thumbnail -->
+        <div id="thumbnail" class="col-2">
+            <img src="<%=coverData%> alt="">
+        </div>
+
+        <!-- Summary -->
+        <div id=" summary" class="col-5">
+            <%= summaryData %>
+        </div>
+        <div id=" summary" class="col-5">
+            <%- reviewsData %>
+        </div>
+
+    </div>
+
+    
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -103,6 +82,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>
