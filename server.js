@@ -2,10 +2,12 @@
 require("dotenv").config();
 
 var express = require("express");
-
+var session = require("express-session");
 var PORT = process.env.PORT || 8080;
-
+var db = require("./models");
 var app = express();
+
+
 // var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
 
@@ -95,7 +97,14 @@ xhr.send();
 // Start our server so that it can begin listening to client requests.
 // ===================================================================
 
-app.listen(PORT, function () {
-    // Log (server-side) when our server has started
-    console.log("Server listening on: http://localhost:" + PORT);
+db.sequelize.sync().then(function() {
+    app.listen(PORT, function () {
+        // Log (server-side) when our server has started
+        console.log("==> 🌎 Server listening on: http://localhost:" + PORT);
+    });
 });
+
+
+
+//IMPORTANT!!!!
+//SEQUELIZE SYNC 
