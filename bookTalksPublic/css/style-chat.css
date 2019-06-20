@@ -1,0 +1,62 @@
+/* body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/title.png) !important;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+} */
+
+#titleimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btn {
+    padding: 5px;
+}
+
+/* html,
+body,
+input {
+    font-family: 16px;
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    background: #ffdb58;
+}
+
+/* form {
+    margin: 15px 0;
+} */
+
+form input [type='text'] {
+    border: 2px solid #27aae1;
+    border-radius: 5px;
+    padding: 5px;
+    width: 75%;
+}
+
+form input [type='submit'] {
+    background: #27aae1;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 7px 5px;
+    width: 19%;
+}
+
+#history {
+    background: #fff;
+    border: 8px solid #27aae1;
+    height: 550px;
+    width: 865px;
+    margin: auto;
+}
+
+.logo {
+    margin: 10px;
+}
