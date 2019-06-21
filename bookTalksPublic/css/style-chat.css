@@ -1,37 +1,77 @@
-/* body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/title.png) !important;
-    height: 80vh;
+body {
+    background: #ffdb58;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+    height: 100vh;
     background-size: cover;
     background-position: center;
-} */
+}
 
-#titleimg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.logo {
+    margin: 10px;
+}
+
+.navbar {
+    height: 80px;
+}
+
+.chat {
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#history {
+    background: #fff;
+    border: 2px solid #27aae1;
+    border-radius: 6px;
+    height: 400px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#msg_text {
+    background: #fff;
+    border: 2px solid #27aae1;
+    border-radius: 4px;
+    height: 34px;
+    margin: auto;
 }
 
 #btn {
-    padding: 5px;
+    /* background: #27aae1;
+    height: 30px;
+    width: 80px;
+    border: #27aae1;
+    border-width: 2px;
+    margin-left: 10px;
+    border-radius: 15px;
+    color: #fff; */
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    background: #27aae1;
+    width: 100px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-left: 30px;
+    color: #fff;
+    cursor: pointer;
 }
 
-/* html,
-body,
-input {
-    font-family: 16px;
-    margin: 0;
-    padding: 0;
-} */
-
-body {
-    background: #ffdb58;
+#btn:hover,
+#btn:active {
+    background: #7acff3;
 }
 
-/* form {
-    margin: 15px 0;
-} */
-
-form input [type='text'] {
+/* form input [type='text'] {
     border: 2px solid #27aae1;
     border-radius: 5px;
     padding: 5px;
@@ -47,16 +87,4 @@ form input [type='submit'] {
     font-weight: bold;
     padding: 7px 5px;
     width: 19%;
-}
-
-#history {
-    background: #fff;
-    border: 8px solid #27aae1;
-    height: 550px;
-    width: 865px;
-    margin: auto;
-}
-
-.logo {
-    margin: 10px;
-}
+} */

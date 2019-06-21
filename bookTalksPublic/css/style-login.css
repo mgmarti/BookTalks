@@ -1,10 +1,18 @@
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../images/title.png);
+    background-image: url(../images/title.png);
     height: 100vh; 
     background-size: cover; 
     background-position: center; 
 }
-/* -----------------------login---------------------- */
+
+.logo {
+    margin: 10px;
+}
+
+.navbar {
+    height: 80px;
+}
+
 .login-page {
     width: 360px;
     padding:10% 0 0;
@@ -17,7 +25,6 @@ body {
     z-index: 1;
     background: linear-gradient(rgba(247, 247, 247, 0.5), rgba(247, 247, 247, 0.5));
     max-width: 360px;
-
     margin-top: 80px;
     padding: 30px;
     text-align: center;
@@ -69,7 +76,7 @@ text-decoration: none;
     display: none;
 }
 
-/* ----------------------TITLE------------------------ */
+
 .title { 
     margin-left: 2rem;
     line-height: .1rem; 
