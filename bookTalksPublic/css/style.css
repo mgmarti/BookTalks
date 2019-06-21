@@ -10,12 +10,31 @@
     margin-top: 10px;
 } */
 
+.banner {
+    background: #ffdb58;
+    width: 100%;
+}
+
 .logo {
     margin: 10px;
 }
 
+.navbar {
+    height: 80px;
+}
+
+.search {
+    width: 20%;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
 h1 {
-    margin: 35px 0 35px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    margin: auto;
+    margin-top: 25px;
     text-align: center;
 }
 

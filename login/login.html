@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href= "./style.css">
 </head>
 
 <body>
@@ -51,17 +52,22 @@
     <!------------ REGISTRATION -------------->
     <div class="login-page">
         <div class="form">
-            <form class="register-form">
-                <input type="text" placeholder="user name"> </br>
-                <input type="password" placeholder="password"> </br>
-                <input type="email" placeholder="email id">
+            <form action="auth" method="POST" class="register-form">
+                <input type="text" name="username" placeholder="Username" required></br> 
+
+                <input type="password" name="password" placeholder="Password" required>  </br> 
+
+                <input type="email" name="email" placeholder="Email" required>
+
                 <button>Submit</button>
                 <p class="message">Already a member? <a href="#"> Login</a></p>
             </form>
             <!------------ MEMBER LOGIN -------------->
-            <form class="login-form">
-                <input type="text" placeholder="user name">
-                <input type="password" placeholder="password">
+            <form action="auth" method="POST" class="login-form">
+
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="email" name="email" placeholder="Email" required>
                 <button>LOGIN</button>
                 <p class="message">Not a member yet? <a href="#">Register</a></p>
             </form>
