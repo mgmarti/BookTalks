@@ -10,25 +10,21 @@ const path = require("path");
 
 module.exports = function (app) {
 
-//Landing
-//=====================================================
+    //Landing
+    //=====================================================
 
     app.get('/', function (req, res) {
         res.json(path.join(__dirname, 'public/index1.html'))
     });
 
 
-//Home Page
-//=====================================================
     app.get('/featured', function (req, res) {
         res.render('featured');
-
-    });
-
+    })
 
 
-//Book Reviews Results
-//=====================================================
+    //Book Reviews Results
+    //=====================================================
     app.get('/results', function (req, res) {
         // console.log(req.query.search);
         let search = req.query.search;
@@ -53,5 +49,6 @@ module.exports = function (app) {
                 console.log(error);
             });
     });
+
 
 }

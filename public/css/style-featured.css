@@ -1,0 +1,147 @@
+body {
+    font-family: montserrat, sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #333333;
+    font-size: 0.875rem;
+}
+
+#featuredBookReviews {
+    margin-top: 25px;
+}
+
+.featured {
+    border-width: 4px;
+    border-color: rgb(231, 231, 231);
+}
+
+.logo {
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.navbar {
+    height: 80px;
+    background: #ffdb58;
+    border-bottom: solid 1px #3333334f;
+    font-family: montserrat, sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.btn {
+    background-color: #25aae1;
+    height: 40px;
+}
+
+.search {
+    width: 20%;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.resultsTitle {
+    margin-top: 35px;
+}
+
+#submit {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.jumbotron {
+    background-color: white;
+    padding-bottom: 0px;
+}
+
+#reviews {
+    margin-left: 150px;
+}
+
+h1 {
+    color: #333333;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* hr {
+    border-width: 4px;
+    border-color: rgb(231, 231, 231);
+} */
+
+h3 {
+    font-family: montserrat, sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #25aae1;
+}
+
+h5 {
+    font-family: montserrat, sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+a {
+    color: #333333;
+}
+
+a:visited {
+    color: #333333;
+}
+
+a:hover:active {
+    color: #25aae1;
+}
+
+#goodreads-widget {
+    font-family: georgia, serif;
+    padding: 18px 0;
+    width: 825px;
+}
+
+#goodreads-widget h1 {
+    font-weight: normal;
+    font-size: 16px;
+    border-bottom: 1px solid #BBB596;
+    margin-bottom: 0;
+}
+
+#goodreads-widget a {
+    text-decoration: none;
+    color: #660;
+}
+
+iframe {
+    background-color: #ffffff;
+}
+
+#goodreads-widget a:hover {
+    text-decoration: underline;
+}
+
+#goodreads-widget a:active {
+    color: #660;
+}
+
+#gr_footer {
+    width: 100%;
+    border-top: 1px solid #BBB596;
+    text-align: right;
+}
+
+#goodreads-widget .gr_branding {
+    color: #382110;
+    font-size: 11px;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
