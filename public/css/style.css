@@ -53,6 +53,11 @@ body {
 }
 
 
+.jumbotron {
+    background-color: white;
+    padding-bottom: 0px;
+}
+
 h1 {
     color: #333333;
     margin: auto;
@@ -77,4 +82,16 @@ h5 {
     font-weight: 600;
     font-style: normal;
 
+}
+
+a {
+    color: #333333;
+}
+
+a:visited {
+    color: #333333;
+}
+
+a:hover:active {
+    color: #25aae1;
 }
