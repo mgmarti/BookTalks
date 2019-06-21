@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href= "./style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -20,6 +20,7 @@
             <img class="logo" src="./images/logo.png" alt="BookTakls" height="50`">
         </a>
     </div>
+
 
     <!------------ NAVAR -------------->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark pl-5 pr-5">
@@ -34,28 +35,35 @@
                     <a class="nav-link" href="./index.html">HOME<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">LOGIN/REGISTER</a>
+                    <a class="nav-link" href="./chat.html">CHAT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PROFILE</a>
+                    <a class="nav-link" href="./login.html">LOGIN/REGISTER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./">PROFILE</a>
                 </li>
             </ul>
-            <form class="form-inline">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn" type="submit">
+            <form action="/results" method="GET" class="form-inline my-2 my-lg-0">
+                <input id="searchInput" name="search" class="form-control mr-sm-2" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button id="submit" type="submit" class="btn btn-outline-success my-2 my-sm-0">
+
                     <img class="logo border-0" src="./images/search.png" alt="Seach" height="30px">
                 </button>
+
             </form>
+
         </div>
     </nav>
-
+    
     <!------------ REGISTRATION -------------->
     <div class="login-page">
         <div class="form">
             <form action="auth" method="POST" class="register-form">
-                <input type="text" name="username" placeholder="Username" required></br> 
+                <input type="text" name="username" placeholder="Username" required></br>
 
-                <input type="password" name="password" placeholder="Password" required>  </br> 
+                <input type="password" name="password" placeholder="Password" required> </br>
 
                 <input type="email" name="email" placeholder="Email" required>
 
