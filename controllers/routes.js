@@ -76,7 +76,7 @@ module.exports = function (app) {
                 res.render('results', {
                     reviewsData: reviews.data.reviews_widget,
                     titleData: title.data.items[2].volumeInfo.title,
-                    coverData: title.data.items[2].volumeInfo.imageLinks.thumbnail,
+                    // coverData: title.data.items[2].volumeInfo.imageLinks.thumbnail,
                     summaryData: title.data.items[2].volumeInfo.description
                 });
 
