@@ -8,7 +8,7 @@
     <title>BookTalks Search Results</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -33,49 +33,65 @@
                     <a class="nav-link" href="./index.html">HOME<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">LOGIN/REGISTER</a>
+                    <a class="nav-link" href="./chat.html">CHAT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PROFILE</a>
+                    <a class="nav-link" href="./login.html">LOGIN/REGISTER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./">PROFILE</a>
                 </li>
             </ul>
-            <form class="form-inline">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn" type="submit">
+            <form action="/results" method="GET" class="form-inline my-2 my-lg-0">
+                <input id="searchInput" name="search" class="form-control mr-sm-2" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button id="submit" type="submit" class="btn btn-outline-success my-2 my-sm-0">
+
                     <img class="logo border-0" src="./images/search.png" alt="Seach" height="30px">
                 </button>
+
             </form>
+
         </div>
     </nav>
 
+
     <!------------ RESULTS -------------->
     <div class="container">
-        <h1>
-            Book Search Results
-        </h1>
+        <img src="images/searchResults.png">
+        <h1> Search Results</h1>
         <hr>
-        <div id="book-results" class="row mt-5 mb-5">
-            <div class="col-4">
-                <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4%2BOTOL.jpg" width="250" alt="">
-            </div>
-            <!------------ WIDGET -------------->
-            <div class="col-8">
-                <div id="goodreads-widget">
-                    <iframe id="the_iframe"
-                        src="https://www.goodreads.com/api/reviews_widget_iframe?did=52655&format=html&header_text=Goodreads+reviews+for+The+Alchemist&isbn=8172234988&links=660&min_rating=&num_reviews=&review_back=ffffff&stars=000000&stylesheet=&text=444"
-                        width="700" height="350" frameborder="0">
-                    </iframe>
-                    <div id="gr_footer">
-                        <a class="gr_branding" target="_blank" rel="nofollow noopener noreferrer"
-                            href="https://www.goodreads.com/book/show/1175481.The_Alchemist?utm_medium=api&utm_source=reviews_widget">Reviews
-                            from Goodreads.com
-                        </a>
-                    </div>
-                </div>
+        <div class="row">
+            <div id="bookTitle" class="col">
+                <p>
+                    <%= titleData %>
+                </p>
             </div>
         </div>
-        <hr>
+        <div class="row">
+            <!-- Summary -->
+            <div id=" summary" class="col">
+                <%= summaryData %>
+            </div>
+        </div>
+        <br>
+        <div id="book-results" class="row">
+            <!-- Thumbnail -->
+            <div id="thumbnail" class="col-2">
+                <!-- image goes here -->
+                
+             
+
+            </div>
+            <div id=" summary" class="col-5">
+                <%- reviewsData %>
+            </div>
+        </div>
     </div>
+    <hr>
+    </div>
+
+
 
     <!------------ SCRIPTS -------------->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
