@@ -6,6 +6,8 @@ const goodreads = {
 };
 
 const path = require("path");
+var authController = require('./authcontroller');
+
 
 
 module.exports = function (app) {
@@ -14,7 +16,7 @@ module.exports = function (app) {
     //=====================================================
 
     app.get('/', function (req, res) {
-        res.json(path.join(__dirname, 'public/index1.html'))
+        res.redirect('signin');
     });
 
 
@@ -50,5 +52,7 @@ module.exports = function (app) {
             });
     });
 
+
+    app.get('/signup', authController.signup);
 
 }

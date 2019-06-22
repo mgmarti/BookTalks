@@ -1,19 +1,29 @@
 body {
-    background-image: url(../images/title.png);
-    height: 100vh; 
-    background-size: cover; 
-    background-position: center; 
+    background-image: url('../images/title.png');
+    background-size: cover;
+    background-position: center;
+    color: #333333;
 }
 
-.logo {
-    margin: 10px;
+html{
+    height: 100%;
 }
 
-.navbar {
-    height: 80px;
+.formContainer {
+    /* position: relative; */
+    width: 450px;
+    margin: 0 auto 100px;
+    margin-top: 50%;
+    padding: 30px;
+    background-color: #ffffffb0;
+    border-radius: 15px;
 }
 
-.login-page {
+
+
+
+/* -----------------------login---------------------- */
+/* .login-page {
     width: 360px;
     padding:10% 0 0;
     margin: auto;
@@ -25,6 +35,7 @@ body {
     z-index: 1;
     background: linear-gradient(rgba(247, 247, 247, 0.5), rgba(247, 247, 247, 0.5));
     max-width: 360px;
+
     margin-top: 80px;
     padding: 30px;
     text-align: center;
@@ -76,10 +87,10 @@ text-decoration: none;
     display: none;
 }
 
-
-.title { 
+/* ----------------------TITLE------------------------ */
+/* .title { 
     margin-left: 2rem;
     line-height: .1rem; 
-    font-size: 3rem;
+    font-size: 3rem; 
 
-}
+} */
