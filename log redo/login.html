@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BookTalks Login</title>
+    <link rel="stylesheet" href= "./style.css">
+</head>
+<body>
+
+    <!-- <img src="http://clipart-library.com/img/958624.gif" alt="book" class="page-title"> -->
+
+ <!-----------------------------REGISTRATION--------------------------------->
+    <div class="login-page" >
+        <div class="form">
+            <form action="auth" method="POST" class="register-form">
+            <input type="text" name="username" placeholder="Username" required></br> 
+            <input type="password" name="password" placeholder="Password" required>  </br>    
+            <input type="email" name="email" placeholder="Email" required>
+            <button>Create</button>    
+            <p class="message">Already Registered? <a href="#"> Login</a></p>            
+            </form>
+    <!--------------------------MEMBER LOGIN----------------------------------->
+        <form action="auth" method="POST" class="login-form">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <button>LOGIN</button>
+            <p class="message">Not Registered? <a href="#">Register</a></p>
+        </form>
+
+    </div>
+    </div>
+    
+
+<!--------------------------JQUERY----------------------------------->
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+
+  <script>
+      $('.message a').click(function(){
+          $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+      });
+  </script>
+    
+</body>
+</html>
