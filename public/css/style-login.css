@@ -19,6 +19,20 @@ html{
     border-radius: 15px;
 }
 
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    background: #27aae1;
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-left: 30px;
+    color: #fff;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
 
 
 
