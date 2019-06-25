@@ -11,20 +11,19 @@ An online book club where users can chat about a book, leave book reviews, and/o
 
 ## Techstack
 
-- List the technologies (including which css framework) you will use for the project
-HTML
-CSS
-EJS
-Bootstrap
-JavaScript
-Node
-Express
-MySQL
-jQuery
-Sequelize
-Heroku
-Google Books API
-Goodreads API
+* HTML
+* CSS
+* EJS
+* Bootstrap
+* JavaScript
+* Node
+* Express
+* MySQL
+* jQuery
+* Sequelize
+* Heroku
+* Google Books API
+* Goodreads API
 
 
 ## Project board
