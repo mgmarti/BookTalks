@@ -14,7 +14,7 @@
 We decided to create BookTalks after discussing our interest in books. When we're reading a book we really love there are times we wish we could discuss the book with someone. While book clubs do exist for that purpose, sometimes our busy schedules might keep us from joining book clubs. To bridge that gap, we created BookTalks the online book club. BookTalks is meant to provide users with the same feel of a book club by allowing users chat online with other users about books they are reading. They are also able to search for books to read reviews of books they might be interested in reading and post their own reviews for books they have read.
 
 ## Screenshots
-[booktalks](https://imgur.com/s1GmDQ1)
+[booktalks]https://imgur.com/s1GmDQ1
 
 ## Technologies
 * HTML
